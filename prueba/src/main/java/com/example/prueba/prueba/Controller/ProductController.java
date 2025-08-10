@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.prueba.prueba.Client.ProductResponseDTO;
 import com.example.prueba.prueba.Model.Products;
 
 import com.example.prueba.prueba.Services.ProductsService;
@@ -42,7 +43,7 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<Products> getAllProducts(){
+    public List<ProductResponseDTO> getAllProducts(){
         return productsService.getAllProducts();
     }
     
